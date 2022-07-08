@@ -1,38 +1,95 @@
+* {
+  font-family: sans-serif;
+}
+
+body {
+  background: linear-gradient(
+    to right,
+    black,
+    white
+  );
+}
+
+h1 {
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .App {
-  text-align: center;
+  background-color: lightcoral;
+  width: 500px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  align-self: center;
+  justify-content: center;
+  box-shadow: 5px 10px 50px black;
+  border-radius: 4px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.shopping-list-input {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+  border-bottom: 1px solid black; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.shopping-list-input input {
+  border-radius: 4px;
+  width: 400px;
+  border: 1px solid lightgrey;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.shopping-list-input button {
+  background-color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.shopping-list-items {
+
+}
+
+.flex-column {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid black;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.flex-row input {
+  flex: 3;
+}
+
+.flex-row span {
+  flex: 4
+}
+
+.flex-row .quantity {
+  flex: 1;
+}
+
+.flex-row .quantity button {
+  border-radius: 4px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  margin-right: 5px
+}
+
+
+.shopping-list-total {
+  font-weight: bolder;
+  color: aliceblue;
 }
